@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Layout with Boxes</title>
+    <style>
+body {}
+.container {}
+.bottom-section {
+  background-color: brown;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.top-section {
+  text-align: center;
+  background-color: brown;
+  color: whitesmoke;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+.middle-section {
+  background-color: antiquewhite;
+}
+.box {
+  border-radius: 3px;
+  box-sizing: content-box;
+  
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-section"><h1> Upcoming Events</h1>Check out out latest events!</div>
+        <div class="middle-section">
+            <div class="box"><h1>Web Development Workshop</h1><br> Date: November 15,2024<br> Location: online</div>
+            <div class="box"><h1>Graphic Design Conference</h1> <br> Date: November 15,2024<br> Location: online</div>
+            <div class="box"><h1>Content Msrketing Simmit</h1> <br> Date: November 15,2024<br> Location: online</div>
+            <div class="box"><h1>Data Science Bootcamp</h1> <br> Date: November 15,2024<br> Location: online</div>
+        </div>
+        <div class="bottom-section">@2024 Event Organization</div>
+    </div>
+</body>
+</html>

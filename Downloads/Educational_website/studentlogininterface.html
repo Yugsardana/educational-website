@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Educational Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Attractive gradient */
+        }
+
+        .heading {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .heading:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #333;
+        }
+
+        .role-selection {
+            margin-bottom: 20px;
+        }
+
+        .role-button {
+            background: linear-gradient(135deg, #74ebd5, #9face6);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s, transform 0.3s;
+            display: inline-block;
+        }
+
+        .role-button:hover {
+            background: #9face6;
+            transform: scale(1.05);
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        input[type="radio"]:checked + .role-button {
+            background: #9face6;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .password {
+            margin-bottom: 15px;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 16px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        input:focus {
+            border-color: #74ebd5;
+            outline: none;
+            box-shadow: 0 0 5px rgba(116, 235, 213, 0.5);
+        }
+
+        button[type="submit"] {
+            padding: 12px;
+            background: linear-gradient(135deg, #74ebd5, #9face6);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background: #9face6;
+            transform: scale(1.05);
+        }
+
+        .noaccount {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .noaccount a {
+            color: #74ebd5;
+            text-decoration: none;
+        }
+
+        .noaccount a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>Educational Platform</h1>
+        <div class="role-selection">
+            <input type="radio" id="student" name="role" checked>
+            <a href="./studentlogininterface.html" class="role-button" >Student Login</a>
+            <input type="radio" id="teacher" name="role">
+            <a href="./teacherlogininterface.html" class="role-button">Teacher Login</a>
+        </div>
+
+        <form class="form" id="form" action="#" method="POST">
+            <h2>Login as Student</h2>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required aria-label="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address with a domain extension (e.g., .com, .org, .net)">
+            </div>
+            <div class="password">
+                <label for="password">Password</label>
+                <input type="password" id="password" required aria-label="Password">
+            <button type="submit"><a href="./classes.html">Log In</a></button>
+            <p class="noaccount">Don't have an account? <a href="#">Sign up</a></p>
+        </form>
+    </div>
+</body>
+</html>

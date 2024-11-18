@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lecture Repository</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            width: 80%;
+            margin: auto;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        .lecture {
+            background: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 10px;
+            transition: transform 0.2s;
+        }
+        .lecture:hover {
+            transform: scale(1.02);
+            border-color: #74ebd5;
+        }
+        .lecture h2 {
+            font-size: 18px;
+            margin: 0 0 10px 0;
+        }
+        .lecture a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background: #74ebd5;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .lecture a:hover {
+            background: #9face6;
+        }
+        .refresh-button {
+            padding: 10px 15px;
+            margin-top: 20px;
+            background: #74ebd5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .refresh-button:hover {
+            background: #9face6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Available Lectures</h1>
+        
+        <div class="lecture">
+            <h2>Lecture Title 1</h2>
+            <p>Description of lecture 1.</p>
+            <a href="link-to-lecture-1">Watch Lecture</a>
+        </div>
+        
+        <div class="lecture">
+            <h2>Lecture Title 2</h2>
+            <p>Description of lecture 2.</p>
+            <a href="link-to-lecture-2">Watch Lecture</a>
+        </div>
+        
+        <div class="lecture">
+            <h2>Lecture Title 3</h2>
+            <p>Description of lecture 3.</p>
+            <a href="link-to-lecture-3">Watch Lecture</a>
+        </div>
+
+        <button class="refresh-button";>Refresh</button>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Selection</title>
+    <style>
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+    position: relative;
+    overflow: hidden; /* Prevents overflow of shapes */
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    position: relative; /* Allow for layering with the background */
+    z-index: 1; /* Ensures the container is on top of the background */
+}
+
+/* Add background shapes */
+body::before, body::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2); /* Light background for the shapes */
+    z-index: 0; /* Behind the container */
+}
+
+body::before {
+    top: -100px;
+    left: -100px;
+    transform: rotate(30deg); /* Rotate for a dynamic effect */
+}
+
+body::after {
+    bottom: -100px;
+    right: -100px;
+    transform: rotate(-30deg); /* Rotate for a dynamic effect */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.class-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two buttons per row */
+    gap: 10px;
+}
+
+.class-btn {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.class-btn:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Select Your Class</h1>
+        <div class="class-buttons">
+            <button class="class-btn"><a href="./class1subject.html">Class 1</a></button>
+            <button class="class-btn">Class 2</button>
+            <button class="class-btn">Class 3</button>
+            <button class="class-btn">Class 4</button>
+            <button class="class-btn">Class 5</button>
+            <button class="class-btn">Class 6</button>
+            <button class="class-btn">Class 7</button>
+            <button class="class-btn">Class 8</button>
+            <button class="class-btn">Class 9</button>
+            <button class="class-btn">Class 10</button>
+            <button class="class-btn">Class 11</button>
+            <button class="class-btn">Class 12</button>
+        </div>
+    </div>
+</body>
+</html>

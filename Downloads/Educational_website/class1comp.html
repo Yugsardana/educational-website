@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 1 Chapters</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+    position: relative;
+    overflow: hidden; /* Prevents overflow of shapes */
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    position: relative; /* Allow for layering with the background */
+    z-index: 1; /* Ensures the container is on top of the background */
+}
+
+/* Add background shapes */
+body::before, body::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2); /* Light background for the shapes */
+    z-index: 0; /* Behind the container */
+}
+
+body::before {
+    top: -100px;
+    left: -100px;
+    transform: rotate(30deg); /* Rotate for a dynamic effect */
+}
+
+body::after {
+    bottom: -100px;
+    right: -100px;
+    transform: rotate(-30deg); /* Rotate for a dynamic effect */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.chapter-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    text-align: left; /* Align text to the left */
+}
+
+.chapter-list li {
+    margin: 10px 0; /* Space between chapters */
+    font-size: 16px;
+    color: #555; /* Darker color for the chapter text */
+    padding: 10px; /* Add some padding */
+    border: 1px solid #ccc; /* Border for chapter items */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s;
+}
+
+.chapter-list li:hover {
+    background: #f0f0f0; /* Light background on hover */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Class 1 Chapters</h1>
+        <ul class="chapter-list">
+            <li>Chapter 1: <a href="https://www.youtube.com/live/THqlY554S_0?si=_dOFJHmVPYy8sDPV">Introduction to Computers</a></li>
+            <li>Chapter 2: <a href="https://youtu.be/O4W5tgNjBFs?si=ZOkC2T5quXTZUVnD">Parts of a Computer</a></li>
+            <li>Chapter 3: <a href="https://youtu.be/Xzwvr2dHxgw?si=-ok2d1GNW5jpTGTj"> How to Use a Computer Safely</a></li>
+            <li>Chapter 4: <a href="https://youtu.be/MXLJEdfQGA4?si=0tBfwwr78BGwrbh3">Using the Mouse</a></li>
+            <li>Chapter 5: <a href="https://youtu.be/7oJrm3Yemic?si=r4r_cNCBemeH2K_A">Using the Keyboard</a></li>
+            <li>Chapter 6: <a href="https://youtu.be/gsHCSFKCwLE?si=ImURQPO_w7JZj2RA">Introduction to Paint or Drawing Software</a></li>
+            <li>Chapter 7: <a href="https://youtu.be/yhoSBFkIIHM?si=sgK9lJiBOxuCyArv">Introduction to Text</a></li>
+            <li>Chapter 8: <a href="https://youtu.be/Xzwvr2dHxgw?si=asrhjq9oxPqUt0SP">Computer Manners and Etiquette</a></li>
+            <li>Chapter 9: <a href="https://youtu.be/dYfIDuIw44I?si=1hIgvFeVyB0jPP6k">Learning with Educational Software</a></li>
+        </ul>
+    </div>
+</body>
+</html>

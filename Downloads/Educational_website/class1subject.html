@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 1 Subjects</title>
+    <style>
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+    position: relative;
+    overflow: hidden; /* Prevents overflow of shapes */
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    position: relative; /* Allow for layering with the background */
+    z-index: 1; /* Ensures the container is on top of the background */
+}
+
+/* Add background shapes */
+body::before, body::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2); /* Light background for the shapes */
+    z-index: 0; /* Behind the container */
+}
+
+body::before {
+    top: -100px;
+    left: -100px;
+    transform: rotate(30deg); /* Rotate for a dynamic effect */
+}
+
+body::after {
+    bottom: -100px;
+    right: -100px;
+    transform: rotate(-30deg); /* Rotate for a dynamic effect */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.subject-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    text-align: left; /* Align text to the left */
+}
+
+.subject-list li {
+    margin: 10px 0; /* Space between subjects */
+    font-size: 16px;
+    color: #555; /* Darker color for the subject text */
+    padding: 10px; /* Add some padding */
+    border: 1px solid #ccc; /* Border for subject items */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s;
+}
+
+.subject-list li:hover {
+    background: #f0f0f0; /* Light background on hover */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Class 1 Subjects</h1>
+        <ul class="subject-list">
+            <li><a href="./class1.2.html">Mathematics</a></li>
+            <li><a href="./class1.html">English</a></li>
+            <li><a href="./class1science.html">Science</a></li>
+            <li><a href="./cass1socialscience.html">Social studies</a></li>
+            <li><a href="./class1comp.html">Computer Science</a></li>
+        </ul>
+    </div>
+</body>
+</html>

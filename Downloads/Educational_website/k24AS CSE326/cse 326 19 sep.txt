@@ -1,0 +1,9 @@
+background-origin
+background-size
+background-attachment
+background-position
+background-image
+background-repeat: repeat-x or y;
+background-blend-mode:
+properties for background attachment is fixed and scroll...
+.

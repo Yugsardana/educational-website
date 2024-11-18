@@ -1,0 +1,16 @@
+1.<tr> is used for making row.
+2.for heading use <thead></thead> tag
+3. for rest of elements use <tbody></tbody>..
+4. rowspan is used for merging 2 rows
+5.colspan is used for merging 2 coulumbs
+
+css on tabales...
+1. height
+2. width
+3. padding
+4. text-align
+5. color
+6. background-color
+7. background image
+8. border
+9. border-collapse..

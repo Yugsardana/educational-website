@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 9</title>
+    <style>
+        body{
+            margin:100px 500px 100px 500px;
+            border: 3px;
+            border-style: hidden solid solid;
+            height: 500px;
+            width: 300px;
+            border-radius: 40px;
+            padding: 15px;
+    }
+        input[type="submit"]:hover{
+            transform: scale(1.4);
+            transition: 1s;
+            color: black;}
+    </style>
+</head>
+<body>
+    <h1>Registration form</h1>
+    <form action="" method="post">
+        <label for="name">NAME</label><br>
+        <input type="text" id="name" size="40" maxlength="100">
+        <br><br>
+        <label for="email">EMAIL</label><br>
+        <input type="email" id="email" size="40" maxlength="100">
+        <br><br>
+        <label for="password">PASSWORD</label><br>
+        <input type="password" id="password" size="40" maxlength="100" >
+        <br><br>
+        <label for="gender">GENDER</label><br>
+        <select name="gender" id="gender">
+            <option value="a">select</option>
+            <option value="b">Male</option>
+            <option value="c">Female</option>
+        </select>
+        <br><br>
+        <label for="a">BIO</label><br>
+        <textarea name="review" id="review" rows="7" cols="35"></textarea><br><br>
+        <input type="submit" name="submit" id="submit">
+
+    </form>
+</body>
+</html>
